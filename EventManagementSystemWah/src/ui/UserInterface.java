@@ -7,7 +7,7 @@
  * @since 1.0
 */
 /**  
-* OS: [OS]
+* OS: [Window 11]
 * IDE: [eclipse XX, jGrasp, etc]
 * Copyright : This is my own original work 
 * based on specifications issued by our instructor
