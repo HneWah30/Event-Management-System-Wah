@@ -13,11 +13,26 @@ Error Handling: Invalid inputs are caught and handled via exceptions with descri
 Sorting: Events and attendees can be sorted by their registration time.
 
 ## File Structure
-dataStructures/: Implements the EventList and AttendeeList classes, which manage the storage events and attendees and sorts attendees.
-models/: Contains the Event and Attendee classes, including validation logic for event and attendee data.
-services/: Handles the business logic for adding, editing, deleting, and retrieving events and attendees.
-test/: Contains the EventTest and AttendeeTest for testing this project method.
-ui/: Contains the GUI features and the main class for running this project
+project-root/
+ ├── src/
+ │   ├── dataStructures/                # LinkedList, Node, AttendeeList classes
+ │   │   ├── LinkedList.java            # LinkedList class (generic)
+ │   │   ├── Node.java                  # Node class for LinkedList
+ │   │   └── AttendeeList.java          # AttendeeList class for managing attendees
+ │   │
+ │   ├── models/                        # Event and Attendee model classes
+ │   │   ├── Event.java                 # Event class
+ │   │   └── Attendee.java              # Attendee class
+ │   │
+ │   ├── services/                      # Business logic related to events and attendees
+ │   │   ├── EventService.java          # Event management logic
+ │   │   └── AttendeeService.java       # Attendee management logic
+ │   ├── ui/                            # User interface components
+ │   │   ├── UserInterface.java         # Main UI for user interaction
+ │   │   └── EventManagementSystem.java # Main application entry point
+ ├── build/                             # Build-related files (for Maven or Gradle)
+ ├── lib/                               # External libraries (JARs)
+ └── README.md                          # Project documentation
 
 ## Before running the Event Management System, ensure the following:
 Java Development Kit (JDK) version 8 or higher.
